@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO</title>
+    <link rel="stylesheet" href="bogoTask.css">
+    <script src="bogoTask.js" defer></script>
+</head>
+<body>
+    <!-- Container -->
+<div class="container ">
+    <h1>YAY! It's BOGO</h1>
+    <!-- Box1 -->
+    <div id="box" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio1">
+                <p style="margin: 10px;padding: 10px;" class="p">1 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">10% off</p>
+            </div>
+            <div>
+                <p class="p" id="price1">$10.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$24.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color</label> 
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- box2 -->
+    <div id="box2" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio2"> 
+                <p style="margin: 10px;padding: 10px;" class="p">2 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">10% off</p>
+            </div>
+            <div>
+                <p class="p" id="price2">$18.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$34.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color:</label> 
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- box3 -->
+    <div id="box3" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio3">
+                <p style="margin: 10px;padding: 10px;" class="p">3 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">30% off</p>
+            </div>
+            <div>
+                <p class="p" id="price3">$24.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$64.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- delivery box -->
+    <div class="delivery-card">
+        <h3 style="color: #ff69b4;">Free Delivery</h3>
+        <div class="total-box">
+            <h3 class="">Total:<span id="total">$18.00 USD</span></h3>
+        </div>
+    </div>
+    <!-- add button  -->
+    <button class="add-button">+ ADD TO CARD</button>
+</div>
+</body>
+</html>
