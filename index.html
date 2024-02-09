@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+.box {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    border: 2px solid #000000;
+    margin: 10px;
+    flex: 0 0 auto;
+    width: 90%;
+    border: 1px solid gray;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inside-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.delivery-card {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-box {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 1px;
+}
+.add-button {
+    width: 90%;
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.radio-button {
+    display: flex;
+}
+.lable {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.selectors {
+    display: none;
+    background-color: #ffffff; 
+}
+.selector {
+    margin-bottom: 10px;
+}
+.pink .selectors {
+    background-color: pink; 
+}
+.pink {
+    background-color: pink !important;
+    border-color: black !important;
+}
+    </style>
+
+</head>
+<body>
+    <!-- Container -->
+<div class="container ">
+    <h1>YAY! It's BOGO</h1>
+    <!-- Box1 -->
+    <div id="box" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio1">
+                <p style="margin: 10px;padding: 10px;" class="p">1 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">10% off</p>
+            </div>
+            <div>
+                <p class="p" id="price1">$10.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$24.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color</label> 
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- box2 -->
+    <div id="box2" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio2"> 
+                <p style="margin: 10px;padding: 10px;" class="p">2 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">10% off</p>
+            </div>
+            <div>
+                <p class="p" id="price2">$18.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$34.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color:</label> 
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- box3 -->
+    <div id="box3" class="box">
+        <div class="inside-box">
+            <div class="radio-button">
+                <input type="radio" name="boxSelection" id="boxRadio3">
+                <p style="margin: 10px;padding: 10px;" class="p">3 unit</p>
+                <p style="background-color: #ff69b4;color: #ffffff;font-size: 16;padding: 5px;">30% off</p>
+            </div>
+            <div>
+                <p class="p" id="price3">$24.00 USD</p>
+                <p style="font-size: 12px;text-decoration: line-through;color: gray;">$64.00 USD</p>
+            </div>
+        </div>
+        <div class="selectors">
+            <div class="selector lable">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="selector lable">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- delivery box -->
+    <div class="delivery-card">
+        <h3 style="color: #ff69b4;">Free Delivery</h3>
+        <div class="total-box">
+            <h3 class="">Total:<span id="total">$18.00 USD</span></h3>
+        </div>
+    </div>
+    <!-- add button  -->
+    <button class="add-button">+ ADD TO CARD</button>
+</div>
+</body>
+<script>
+    const boxRadios = document.querySelectorAll('[id^="boxRadio"]'); 
+    const selectors = document.querySelectorAll('.selectors');
+
+    boxRadios.forEach(function (boxRadio, index) {
+        boxRadio.addEventListener('change', function () {
+            selectors.forEach(function (selector) {
+                selector.style.display = 'none';
+                selector.parentElement.parentElement.classList.remove('pink'); 
+            });
+            document.getElementById("box").classList.remove('pink')
+            document.getElementById("box2").classList.remove('pink')
+            document.getElementById("box3").classList.remove('pink')
+
+           
+            if (this.checked) {
+                selectors[index].style.display = 'flex';
+                this.closest('.box').classList.add('pink'); 
+            } else {
+                this.closest('.box').classList.remove('pink'); 
+            }
+        });
+    });
+   // Update total price based on radio button selection
+function updateTotalPrice(price) {
+    document.getElementById('total').textContent = price;
+}
+
+// Event listener for radio buttons
+document.querySelectorAll('input[type="radio"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        let priceId;
+        if (this.id === 'boxRadio1') {
+            priceId = 'price1';
+        } else if (this.id === 'boxRadio2') {
+            priceId = 'price2';
+    // Added for the third set of radio buttons
+        } else if (this.id === 'boxRadio3') { 
+            priceId = 'price3';
+        }
+        // Get the price text content
+        const price = document.getElementById(priceId).textContent; 
+        // Update the total price
+        updateTotalPrice(price); 
+    });
+});
+</script>
+</html>
